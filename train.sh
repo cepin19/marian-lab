@@ -1,6 +1,6 @@
 dev="5"
 
-../guessmarian \
+$marian/guessmarian \
 	--model model/model_base_"$(whoami)".npz --type transformer  --task transformer-base --pretrained-model model/model_base.npz \
     --train-sets   corp/corp1k.en corp/corp1k.cs  \
     --max-length 100 \
