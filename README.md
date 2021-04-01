@@ -6,6 +6,9 @@ export marian=/lnet/express/work/people/jon/marian-dist
 on AIC:
 export marian=/lnet/aic/personal/jon/marian-dist
 
+on metacentrum:
+export marian=/storage/brno8/home/cepin/marian-dist/
+
 elsewhere:
 first run "marian-installer.sh $PWD/marian", if everything is ok, export marian=$PWD/marian
 
@@ -26,6 +29,5 @@ After outputting the validation BLEU score, training is done, the modified model
 now you can see how fast can Marian be:
 ./compare_speeds.sh
 
-Slides overleaf: https://www.overleaf.com/6346392145dtmfcbntdpgm
 
 
