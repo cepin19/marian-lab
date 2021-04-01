@@ -26,4 +26,6 @@ After outputting the validation BLEU score, training is done, the modified model
 now you can see how fast can Marian be:
 ./compare_speeds.sh
 
+Slides overleaf: https://www.overleaf.com/6346392145dtmfcbntdpgm
+
 
