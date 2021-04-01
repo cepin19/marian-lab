@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
-set -e
 mkdir model data 
+set -e
+
 cd model/
 
 # download newstest19
@@ -19,7 +20,7 @@ do
 	do
 		mkdir -p $lang.student.$model
 		cd $lang.student.$model
-	#	wget -nc http://data.statmt.org/bergamot/models/8bit-students/$lang/$model/model.8bit-finetuned.npz
+		wget -nc http://data.statmt.org/bergamot/models/8bit-students/$lang/$model/model.8bit-finetuned.npz
 	#	wget -nc http://data.statmt.org/bergamot/models/8bit-students/$lang/$model/model.8bit-finetuned.alphas.npz
 	#	wget -nc http://data.statmt.org/bergamot/models/8bit-students/$lang/$model/model.8bit-finetuned.intgemm8.bin
 	#	wget -nc http://data.statmt.org/bergamot/models/8bit-students/$lang/$model/model.8bit-finetuned.intgemm8.alphas.bin
