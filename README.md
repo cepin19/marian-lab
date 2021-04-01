@@ -18,7 +18,7 @@ then
 
 now you can "finetune" the model on CPU (it will get worse probably, since the batch size is too low, but it is ok for demonstrating training output):
 
-./trans.sh
+./train.sh
 
 It will take ~2 minutes for training to start, then it will run for 60 updates (each consisting of 16 sentences), few seconds each.
 After 60 updates, the model is evaluated in terms of validation set cross-entropy, perplexity and BLEU score
