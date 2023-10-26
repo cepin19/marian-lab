@@ -9,10 +9,7 @@ python3 -m pip install sacrebleu --user
 #python3 -m sacrebleu --echo src -l en-cs -t wmt19 > corp/news19.en.snt
 #python3 -m sacrebleu --echo ref -l en-cs -t wmt19 > corp/news19.cs.snt
 
-#base model trained only on czeng-train
-wget -nc https://transfer.sh/TfwTl/model_transformer_base_para2.npz 
-mv model_transformer_base_para2.npz  model_base.npz 
-wget -nc https://transfer.sh/oY2qc/encs.spm
+
 
 #bergamot models
 for lang in encs
